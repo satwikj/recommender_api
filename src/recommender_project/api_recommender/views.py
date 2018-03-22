@@ -7,11 +7,11 @@ from rest_framework import status
 from . import serializers
 
 from .ml_module import test
-#from . import ml_module.test as ml_test
+
 # Create your views here.
 
 class RecommenderApiView(APIView):
-    """API View to recommend movies based on user input"""
+    """API to View recommended movies based on user input"""
     serializer_class = serializers.RecommenderSerializer
 
     def post(self,request):
